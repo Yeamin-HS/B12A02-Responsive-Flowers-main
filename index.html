@@ -26,7 +26,7 @@
 
 <body class="font-serif bg-white">
 
-  <!-- ✅ Navbar -->
+  <!-- Navbar -->
   <nav class="bg-[#F5F8FF]">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
       <img src="assets/logo.png" class="h-20 w-auto object-contain md:h-20" alt="Logo">
@@ -44,25 +44,29 @@
     </div>
   </nav>
 
-  <!-- ✅ Hero Banner -->
-  <section class="bg-[#F5F8FF] py-12">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 items-center">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-          ALWAYS <span class="text-orange-600">FRESH FLOWERS</span>
-        </h1>
-        <p class="text-gray-400 mt-4 max-w-sm">
-          Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
-          blooms, we offer a wide variety of fresh flowers perfect for any occasion.
-        </p>
-      </div>
-      <div class="text-center">
-        <img src="assets/hero-flower.png" class="max-w-full mx-auto" alt="Fresh Flowers">
-      </div>
+  <!-- Hero Banner -->
+ <section class="bg-[#F5F8FF] py-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 items-center">
+    <!-- ✅ Image First on Mobile, Second on Desktop -->
+    <div class="text-center order-1 md:order-2">
+      <img src="assets/hero-flower.png" class="max-w-full mx-auto" alt="Fresh Flowers">
     </div>
-  </section>
 
-  <!-- ✅ Our Plants -->
+    <!-- ✅ Text Second on Mobile, First on Desktop -->
+    <div class="order-2 md:order-1">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        ALWAYS <span class="text-orange-600">FRESH FLOWERS</span>
+      </h1>
+      <p class="text-gray-400 mt-4 max-w-sm">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+        blooms, we offer a wide variety of fresh flowers perfect for any occasion.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Plants -->
   <section class="bg-[#F5F8FF] py-16">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-10">
@@ -86,7 +90,7 @@
           </button>
         </div>
 
-        <!-- ✅ Duplicate product 7 more times -->
+        
         <div class="bg-[#F5F8FF] text-center">
           <img src="assets/sample-flower-image.png" class="w-full" alt="Lily Blossom">
           <h3 class="text-lg mt-2 font-medium">Lily Blossom</h3>
@@ -183,52 +187,64 @@
   </section>
 
   <!--Latest Deals -->
-  <section class="bg-[#F5F8FF] py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold"><span class="text-orange-600">Latest</span> Deals</h2>
-        <p class="text-gray-400 max-w-lg mx-auto mt-2">Indulge your senses with the beauty and fragrance of our fresh
-          flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+ <section class="bg-[#F5F8FF] py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold">
+        <span class="text-orange-600">Latest</span> Deals
+      </h2>
+      <p class="text-gray-400 max-w-lg mx-auto mt-2">
+        Indulge your senses with the beauty and fragrance of our fresh
+        flower shop. From classic roses to exotic blooms, we offer a wide
+        variety of fresh.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <div class="relative h-48 rounded-md overflow-hidden order-1 md:order-1">
+        <img src="assets/deal-bloom.png" class="w-full h-full object-cover" alt="Bloom Plant">
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
+          <h3 class="text-lg font-bold">60% Off | Bloom Plant</h3>
+          <a href="#" class="underline">Shop Now</a>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="relative h-48 rounded-md overflow-hidden">
-          <img src="assets/deal-bloom.png" class="w-full h-full object-cover" alt="Bloom Plant">
-          <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
-            <h3 class="text-lg font-bold">60% Off | Bloom Plant</h3>
-            <a href="#" class="underline">Shop Now</a>
-          </div>
+      
+      <div class="relative h-50 rounded-md overflow-hidden md:row-span-2 order-3 md:order-2">
+        <img src="assets/deal-zabo.png" class="w-full h-full object-cover" alt="Zabo Plant">
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
+          <h3 class="text-2xl font-bold">25% Off | Zabo Plant</h3>
+          <a href="#" class="underline text-lg">Shop Now</a>
         </div>
+      </div>
 
-        <div class="relative h-50 rounded-md overflow-hidden md:row-span-2">
-          <img src="assets/deal-zabo.png" class="w-full h-full object-cover " alt="Zabo Plant">
-          <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
-            <h3 class="text-2xl font-bold">25% Off | Zabo Plant</h3>
-            <a href="#" class="underline text-lg">Shop Now</a>
-          </div>
-        </div>
-
-        <div class="relative h-48 rounded-md overflow-hidden">
-          <img src="assets/deal-ana.png" class="w-full h-full object-cover" alt="Ana Plant">
-          <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
-            <h3 class="text-lg font-bold">30% Off | Ana Plant</h3>
-            <a href="#" class="underline">Shop Now</a>
-          </div>
+     
+      <div class="relative h-48 rounded-md overflow-hidden order-2 md:order-3">
+        <img src="assets/deal-ana.png" class="w-full h-full object-cover" alt="Ana Plant">
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
+          <h3 class="text-lg font-bold">30% Off | Ana Plant</h3>
+          <a href="#" class="underline">Shop Now</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Newsletter Join -->
   <section class="bg-cover bg-center py-40  " style="background-image: url('assets/news-letter-bg.png');">
     <div class="max-w-6xl mx-auto text-center px-4">
       <h2 class="text-3xl md:text-5xl text-white font-bold mb-6">Join the colorful Bunch</h2>
-      <form class="flex flex-col md:flex-row justify-center max-w-xl mx-auto">
-        <input type="email" placeholder="Write email"
-          class="flex-1 px-4 py-3 outline-none text-gray-500">
-        <button
-          class="bg-orange-600 text-white px-6 py-3 font-semibold hover:bg-orange-700">Subscribe</button>
-      </form>
+      <form class="flex w-full max-w-lg mx-auto">
+  <input type="email" placeholder="Write email" required
+         class="flex-1 px-4 py-3 text-base border border-gray-300 focus:outline-none" />
+  <button type="submit"
+          class="bg-orange-600 text-white font-bold px-5 py-3 hover:bg-orange-700 transition-all">
+    Subscribe
+  </button>
+</form>
+
     </div>
   </section>
 
@@ -237,12 +253,12 @@
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-4">
       <div>
         <img src="assets/logo.png" class="w-32  md:w-40" alt="Logo">
-        <p class="text-gray-600 mt-4 max-w-xs">
+        <p class="text-gray-400 mt-4 max-w-xs">
           Indulge your senses with the beauty and fragrance of our fresh flower shop.
         </p>
       </div>
 
-      <div class="grid grid-cols-2 gap-6 text-gray-700">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-400">
         <ul class="space-y-3">
           <li><a href="#" class="hover:text-orange-600">Home</a></li>
           <li><a href="#" class="hover:text-orange-600">About Us</a></li>
@@ -258,6 +274,7 @@
           <li><a href="#" class="hover:text-orange-600">Help Center</a></li>
         </ul>
       </div>
+      
 
       <div class="flex md:justify-end items-start gap-5">
         <a href="#"><img src="assets/icon-linkedin.png" class="w-8" alt="LinkedIn"></a>
